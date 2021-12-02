@@ -16,7 +16,6 @@
  - В папке с файлом manage.py выполните команду: 
  - ``` python3 manage.py runserver ``` 
  ### Авторы:
-  - Вячеслав
-  - GitHub: https://github.com/carden-code
+  - Вячеслав (GitHub: https://github.com/carden-code)
  ### Лицензия:
  - MIT
