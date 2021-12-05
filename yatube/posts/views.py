@@ -1,13 +1,21 @@
-from django.shortcuts import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
     """Обработчик главной страницы"""
-    if request.method == 'GET':
-        return HttpResponse('Hello World')
+    template = 'posts/index.html'
+    text = 'Это главная страница проекта Yatube'
+    context = {
+        'text': text
+    }
+    return render(request=request, template_name=template, context=context)
 
 
 def group_posts(request, slug):
-    """Оюработчик груп постов"""
-    if request.method == 'GET':
-        return HttpResponse(f'THIS GROUPS PAGE - {slug}')
+    """Обработчик груп постов"""
+    template = 'posts/group_list.html'
+    text = 'Здесь будет информация о группах проекта Yatube'
+    context = {
+        'text': text
+    }
+    return render(request=request, template_name=template, context=context)
